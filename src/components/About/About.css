@@ -1,0 +1,55 @@
+/* Neon Text Animation for the Section Title */
+.neon-text {
+    background-image: linear-gradient(45deg, #ff0000, #00b3ff, #9900cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: neon-flicker 1.5s infinite ease-in-out;
+}
+
+@keyframes neon-flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Neon Border Effect for Profile Picture */
+.neon-border {
+    border: 2px solid transparent;
+    /*background-image: linear-gradient(45deg, #ff0000, #00b3ff, #9900cc);*/
+    background-clip: padding-box;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.neon-border:hover {
+    transform: scale(1.1);
+    /*box-shadow: 0 0 30px rgba(255, 0, 0, 0.7), 0 0 20px rgba(0, 179, 255, 0.7), 0 0 15px rgba(153, 0, 204, 0.7);*/
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 768px) {
+    .neon-text {
+        font-size: 3rem; /* Smaller text for mobile */
+    }
+
+    .max-w-lg {
+        max-width: 90%;
+    }
+
+    .w-48 {
+        width: 150px; /* Slightly smaller image on smaller screens */
+        height: 150px;
+    }
+
+    .w-56 {
+        width: 180px;
+        height: 180px;
+    }
+}
+

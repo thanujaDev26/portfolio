@@ -23,7 +23,7 @@ export default function ContactMe() {
 
                             <div
                                 className="space-y-6 sm:col-span-1 border border-gray-800 rounded-3xl p-8 bg-gradient-to-br
-    from-gray-800 via-gray-900 to-black shadow-xl shadow-gray-900/60">
+        from-gray-800 via-gray-900 to-black shadow-xl shadow-gray-900/60">
                                 <h3 className="text-3xl font-extrabold text-white tracking-wide uppercase">
                                     Contact card
                                 </h3>
@@ -53,7 +53,8 @@ export default function ContactMe() {
                                         <p className="text-xl font-semibold text-white">
                                             <a
                                                 href="mailto:thanujapriyadarshane26@gmail.com"
-                                                className="hover:text-indigo-400 transition-all duration-300" style={{border: 'none'}}
+                                                className="hover:text-indigo-400 transition-all duration-300"
+                                                style={{border: 'none'}}
                                             >
                                                 thanujapriyadarshane26@gmail.com
                                             </a>
@@ -70,9 +71,10 @@ export default function ContactMe() {
                                     <li>
                                         <div className="flex justify-center gap-8 mt-4 text-4xl">
                                             <a
-                                                href="#"
+                                                href="https://www.facebook.com/thanuja.priyadarshana.14"
                                                 className="text-indigo-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-125 border-none"
                                                 aria-label="Facebook"
+                                                target="_blank"
                                             >
                                                 <FaFacebookF/>
                                             </a>
@@ -80,26 +82,36 @@ export default function ContactMe() {
                                                 href="https://wa.me/+94767274497"
                                                 className="text-green-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-125 border-none"
                                                 aria-label="WhatsApp"
+                                                target="_blank"
                                             >
                                                 <FaWhatsapp/>
                                             </a>
                                             <a
-                                                href="#"
+                                                href="https://www.instagram.com/_thanuja10_/profilecard/?igsh=MWIxZGI0aHVjNnloaQ%3D%3D"
                                                 className="text-purple-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-125 border-none"
                                                 aria-label="Instagram"
+                                                target="_blank"
                                             >
                                                 <FaInstagram/>
                                             </a>
                                         </div>
-
-
                                     </li>
                                 </ul>
+
+
+                                <div className="mt-6 text-center">
+                                    <a
+                                        href="mailto:thanujapriyadarshane26@gmail.com?subject=Hii%20Thanuja%2C%20Can%20you%20do%20me%20a%20favour%3F"
+                                        className="text-3xl md-text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-indigo-400 transition-all duration-300"
+                                    >
+                                        &lt;Hire Me!/&gt;
+                                    </a>
+                                </div>
                             </div>
 
 
                             <div className="space-y-6 sm:col-span-1">
-                                <div>
+                                <div className="text-center">
                                     <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 drop-shadow-lg">
                                         &lt;Leave a Message/&gt;
                                     </h3>

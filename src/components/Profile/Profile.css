@@ -54,12 +54,18 @@
 
 
 .typewriter {
+    /*display: inline-block;*/
+    /*font-size: 1.25rem;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*!*border-right: 4px solid #000; *!*/
+    /*animation: typing 50s steps(60) 1s forwards;*/
     display: inline-block;
     font-size: 1.25rem;
     white-space: nowrap;
     overflow: hidden;
-    /*border-right: 4px solid #000; */
-    animation: typing 15s steps(75) 1s forwards;
+    width: 0;
+    animation: typing 20s steps(50) 1s forwards, blink 1s step-end infinite;
 }
 
 /* Typing Effect */

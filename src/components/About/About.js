@@ -13,7 +13,7 @@ function About() {
                 <p>
                     Hello! I'm a passionate software developer currently pursuing my Bachelor's degree in Computer
                     Science at the <strong>University of Ruhuna</strong>, Sri Lanka. With over two years of experience in full-stack development,
-                    I have worked with technologies like React, Angular, and Django to build scalable and user-friendly web
+                    I have worked with technologies like React, Angular, NodeJS and Django to build scalable and user-friendly web
                     applications.
                 </p>
 

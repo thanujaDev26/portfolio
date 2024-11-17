@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 function AdsSection() {
-    const adsAvailable = false; // Set this to `true` when ads are available
+    const adsAvailable = false;
     const [email, setEmail] = useState("");
     const [isNotified, setIsNotified] = useState(false);
 
@@ -39,13 +39,12 @@ function AdsSection() {
 
     return (
 
-        <section className="py-8 md:py-16 bg-gray-50" id="ads">
+        <section className="py-8 md:py-16 " id="ads">
 
             <div className="max-w-7xl mx-auto px-4 md:px-6">
-                <h2 className="text-2xl md:text-3xl font-extrabold text-center text-gray-800 mb-8 md:mb-12">
+                <h2 className="text-5xl md:text-5xl font-extrabold text-center text-gray-800 mb-8 md:mb-12">
                     Sponsored Ads and Promotions
                 </h2>
-
                 {adsAvailable ? (
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
                         {/* Ad 1 */}
@@ -86,7 +85,7 @@ function AdsSection() {
                             </a>
                         </div>
 
-                        {/* Ad 3 */}
+
                         <div
                             className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-cyan-500 hover:ring-4 hover:ring-cyan-500">
                             <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
@@ -133,10 +132,12 @@ function AdsSection() {
                                 </form>
                             )}
                         </div>
+
                     </div>
+
                 )}
             </div>
-            <div className="absolute inset-0 rounded-3xl blur-md opacity-10 bg-gradient-to-r from-blue-400 to-purple-500"></div>
+
         </section>
     );
 }

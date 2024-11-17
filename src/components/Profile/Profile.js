@@ -21,8 +21,9 @@ function Profile() {
             <h1 className="text-3xl md:text-5xl font-extrabold mt-4 text-black text-center transition-all duration-300 transform hover:scale-105">
                 Thanuja Priyadarshane
             </h1>
-            <p className="text-lg md:text-2xl text-gray-800 text-center font-medium mt-2 typewriter">
-                Full Stack Developer - DevOps Enthusiast
+            <p className="text-lg md:text-2xl text-center font-semibold mt-4 tracking-wide
+    bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent typewriter">
+                Full Stack Developer | DevOps Explorer | Digital Storyteller
             </p>
 
 
@@ -47,7 +48,7 @@ function Profile() {
                 </a>
 
                 <a href="#contact"
-                    className="neon-hover text-xl border-2 border-black hover:border-cyan-500 rounded-full
+                   className="neon-hover text-xl border-2 border-black hover:border-cyan-500 rounded-full
         px-4 py-2 hover:text-cyan-500 transition-all duration-300 ease-in-out animate-pulse">
                     Contact Info
                 </a>

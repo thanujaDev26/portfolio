@@ -18,15 +18,15 @@ function None() {
                     &lt;Visit My GitHub/&gt;
                 </a>
 
-                <div className="mt-12 relative">
-                    <img
-                        src={require("../../asserts/images/Screenshot 2024-11-16 at 09.35.26.png")}
-                        alt="GitHub Repos Screenshot"
-                        className="w-full h-auto md:w-3/4 lg:w-2/3 mx-auto rounded-xl object-cover"
-                    />
-                    <div
-                        className="absolute inset-0  to-black opacity-20 rounded-xl"></div>
-                </div>
+                {/*<div className="mt-12 relative">*/}
+                {/*    <img*/}
+                {/*        src={require("../../asserts/images/Screenshot 2024-11-16 at 09.35.26.png")}*/}
+                {/*        alt="GitHub Repos Screenshot"*/}
+                {/*        className="w-full h-auto md:w-3/4 lg:w-2/3 mx-auto rounded-xl object-cover"*/}
+                {/*    />*/}
+                {/*    <div*/}
+                {/*        className="absolute inset-0  to-black opacity-20 rounded-xl"></div>*/}
+                {/*</div>*/}
 
 
             </div>

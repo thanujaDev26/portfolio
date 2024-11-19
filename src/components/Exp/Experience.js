@@ -4,14 +4,14 @@ import './Experience.css'
 function Experience() {
     const skills = [
         { title: "JavaScript", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        { title: "Golang", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" },
         { title: "Node.js & Express.js", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
         { title: "Python & FastAPI", level: "Advanced", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-        { title: "Golang", level: "Basic", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" },
-        { title: "GitHub Actions", level: "Basic", icon: "https://www.vectorlogo.zone/logos/github/github-icon.svg" },
+        { title: "GitHub Actions", level: "Intermediate", icon: "https://www.vectorlogo.zone/logos/github/github-icon.svg" },
         { title: "AWS Cloud", level: "Intermediate", icon: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" },
-        { title: "Firebase", level: "Intermediate", icon: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" },
-        { title: "Python OpenCV", level: "Basic", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
-        { title: "Cloudflare", level: "Intermediate", icon: "https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" }
+        // { title: "Firebase", level: "Intermediate", icon: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" },
+        // { title: "Python OpenCV", level: "Basic", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
+        // { title: "Cloudflare", level: "Intermediate", icon: "https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" }
     ];
 
 

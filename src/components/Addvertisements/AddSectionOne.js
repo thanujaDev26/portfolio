@@ -1,39 +1,36 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import emailjs from "emailjs-com";
 function AdsSection() {
     const adsAvailable = false;
     const [email, setEmail] = useState("");
     const [isNotified, setIsNotified] = useState(false);
 
-    const handleEmailChange = () => {
-        setEmail((prevState)=>{
-            return{
-                ...prevState,
-                email: email
-            }
-        })
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value);
     };
 
     const handleNotifySubmit = async (e) => {
         e.preventDefault();
-        const message = `Hello Thanuja, I would like to display an advertisement on your blog site, can you notify me when they are available?`;
-        if (email) {
-            try {
-                const response = await axios.post('http://localhost:5000/api/send-email', {
-                    email: email,
-                    message: message,
-                });
-
-                if (response.data.success) {
-                    setIsNotified(true);
-                } else {
-                    alert('Something went wrong. Please try again later.');
-                }
-            } catch (error) {
-                alert('Error sending email. Please try again later.');
-            }
+        let user = {
+            from_email: email
         }
+
+       try {
+           await emailjs.send(
+               'service_1wwsie6',
+               'template_uioy0is',
+               user,
+               'ntfsFA_vEwleik9wC'
+           )
+       }
+       catch (error){
+           alert("Failed to send your message. Please try again");
+       }
+
+        setEmail('')
     };
+
 
 
 

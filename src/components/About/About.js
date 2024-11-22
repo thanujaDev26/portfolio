@@ -12,25 +12,42 @@ function About() {
             <div className="mt-10 text-gray-500 space-y-6">
                 <p>
                     Hello! I'm a passionate software developer currently pursuing my Bachelor's degree in Computer
-                    Science at the <strong>University of Ruhuna</strong>, Sri Lanka. With over two years of experience in full-stack development,
-                    I have worked with technologies like React, Angular, NodeJS and Django to build scalable and user-friendly web
-                    applications.
+                    Science at the <strong>University of Ruhuna</strong>, Sri Lanka. With over two years of experience
+                    in full-stack development,
+                    I have a solid understanding of backend technologies like Express.js, FastAPI, and Django, along
+                    with frontend expertise
+                    in frameworks like React and Angular.
                 </p>
 
                 <p>
-                    In addition to development, I have a growing interest in DevOps, and I've worked on setting up CI/CD
-                    pipelines, containerization, and using cloud platforms to improve efficiency and streamline the
-                    development process.
-                    I'm also diving into the world of Machine Learning and applying algorithms to real-world problems.
+                    As a full-stack developer, I deploy my projects using cloud platforms like AWS, leveraging CI/CD
+                    pipelines
+                    with GitHub Actions to ensure efficient and seamless integration and development. I also have
+                    experience developing
+                    cloud-based software solutions using Golang, focusing on scalability and performance optimization.
                 </p>
 
                 <p>
-                    I believe in continuous learning and am always eager to improve my skills. Whether it's exploring new
-                    technologies, contributing to open-source projects, I'm committed to
-                    staying at the forefront of the tech industry. I also enjoy helping others learn and grow in their tech
-                    journey.
+                    Beyond development, I use tools like Docker and Kubernetes for containerization and orchestration,
+                    Apache Kafka
+                    for real-time data streaming, and Kong API Gateway for API management. Additionally, I work with
+                    Terraform to
+                    automate infrastructure as code(IaC), ensuring that deployments are consistent and scalable across
+                    environments.
+                    I am also exploring microservices architecture to leverage these tools more effectively for advanced
+                    and scalable systems.
+                </p>
+
+                <p>
+                    I have a growing interest in DevOps and Machine Learning, applying my knowledge to real-world
+                    challenges and
+                    exploring innovative solutions. I believe in continuous learning and am always eager to improve my
+                    skills,
+                    whether it's exploring new technologies, contributing to open-source projects, or helping others
+                    grow in their tech journeys.
                 </p>
             </div>
+
 
         </section>
     );

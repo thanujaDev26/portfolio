@@ -33,7 +33,7 @@ function BlogSection() {
         navigate(`blogs/${id}`)
         setIsLoading(true)
         try{
-            const response = await axios.get(`http://localhost:3001/blogs/${id}`);
+            const response = await axios.get(`https://api.imthanuja.com/blogs/${id}`);
             // console.log(response.data);
             const blog = response.data.data.blog;
             console.log(blog);

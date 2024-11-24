@@ -1,0 +1,17 @@
+.neon-ring {
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.6), 0 0 40px rgba(59, 130, 246, 0.4);
+    border: 2px solid rgba(59, 130, 246, 0.2);
+    animation: glow 1.5s infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.6), 0 0 30px rgba(59, 130, 246, 0.4);
+        border-color: rgba(59, 130, 246, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(59, 130, 246, 1), 0 0 40px rgba(59, 130, 246, 0.8), 0 0 60px rgba(59, 130, 246, 0.6);
+        border-color: rgba(59, 130, 246, 1);
+    }
+}

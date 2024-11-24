@@ -1,0 +1,46 @@
+[
+  {
+     "id": 2,
+     "title": "Introduction to DevOps with AWS",
+     "description": "Explore the integration of DevOps practices with AWS to streamline development and operations.",
+     "date": "October 25, 2024",
+     "image": "https://media2.dev.to/dynamic/image/width=1600,height=900,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F7bsd9pw99e76jhhx5ep5.png",
+     "link": "devops-with-aws",
+     "readTime": "7 min read"
+ },
+ {
+     "id": 3,
+     "title": "How to Use JSON web Tokens for User Authentication",
+     "description": "Understand the process of implementing JWT tokens for secure user authentication.",
+     "date": "September 15, 2024",
+     "image": "https://avatao.com/media/JWT-blogpost.png",
+     "link": "jwt-authentication",
+     "readTime": "6 min read"
+ },
+ {
+     "id": 4,
+     "title": "Exploring Terraform for Infrastructure as Code (IaC)",
+     "description": "Get familiar with Terraform, an essential tool for automating infrastructure management.",
+     "date": "August 10, 2024",
+     "image": "https://media.licdn.com/dms/image/D4D12AQFpZvy4vNgw0g/article-cover_image-shrink_720_1280/0/1685209134985?e=2147483647&v=beta&t=fK86QvKJQiA_bYw9sIXzsauKS0H3hCPHZjoPh2ui0lw",
+     "link": "terraform-iac",
+     "readTime": "5 min read"
+ },
+ {
+     "id": 5,
+     "title": "Docker Essentials for Beginners",
+     "description": "A beginner’s guide to mastering Docker for containerized application development.",
+     "date": "October 25, 2024",
+     "image": "https://blog.albrightlabs.com/wp-content/uploads/2023/04/albright-labs-docker-kubernetes.png",
+     "link": "docker-essentials",
+     "readTime": "7 min read"
+ },
+ {
+     "id": 6,
+     "title": "Reverse Proxy Script Practices for Nginx Server",
+     "description": "Learn how to configure reverse proxy scripts on your Nginx server.",
+     "date": "October 25, 2024",
+     "image": "https://download.logo.wine/logo/Nginx/Nginx-Logo.wine.png",
+     "link": "nginx-reverse-proxy",
+     "readTime": "7 min read"
+ }]

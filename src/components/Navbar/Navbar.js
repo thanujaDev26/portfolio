@@ -36,21 +36,25 @@ function Navbar() {
                 {/*</div>*/}
 
 
-                <div className="hidden md:flex space-x-8">
+                <div className="hidden md:flex space-x-6">
                     <a href="#about"
-                       className="neon-hover text-xl border-2 border-black hover:border-cyan-500 rounded-full px-4 py-2 hover:text-cyan-500 transition-all duration-300 ease-in-out">
+                       className="neon-hover text-lg border-2 border-black hover:border-cyan-500 rounded-full px-3 py-2 hover:text-cyan-500 transition-all duration-300 ease-in-out">
                         About
                     </a>
                     <a href="#experience"
-                       className="neon-hover text-xl border-2 border-black hover:border-cyan-500 rounded-full px-4 py-2 hover:text-cyan-500 transition-all duration-300 ease-in-out">
+                       className="neon-hover text-lg border-2 border-black hover:border-cyan-500 rounded-full px-3 py-2 hover:text-cyan-500 transition-all duration-300 ease-in-out">
                         Experience
                     </a>
                     <a href="#projects"
-                       className="neon-hover text-xl border-2 border-black hover:border-cyan-500 rounded-full px-4 py-2 hover:text-cyan-500 transition-all duration-300 ease-in-out">
+                       className="neon-hover text-lg border-2 border-black hover:border-cyan-500 rounded-full px-3 py-2 hover:text-cyan-500 transition-all duration-300 ease-in-out">
                         Projects
                     </a>
+                    <a href="#blogs"
+                       className="neon-hover text-lg border-2 border-black hover:border-cyan-500 rounded-full px-3 py-2 hover:text-cyan-500 transition-all duration-300 ease-in-out">
+                        Blogs
+                    </a>
                     <a href="#contact"
-                       className="neon-hover text-xl border-2 border-black hover:border-cyan-500 rounded-full px-4 py-2 hover:text-cyan-500 transition-all duration-300 ease-in-out">
+                       className="neon-hover text-lg border-2 border-black hover:border-cyan-500 rounded-full px-3 py-2 hover:text-cyan-500 transition-all duration-300 ease-in-out">
                         Contact
                     </a>
                 </div>
@@ -60,7 +64,7 @@ function Navbar() {
                     className="md:hidden flex items-center justify-center p-3 rounded-full hover:bg-blue-100 transition-all duration-300 ease-in-out"
                     onClick={() => setMenuOpen(!menuOpen)}
                 >
-                    <div className={`hamburger-icon ${menuOpen ? "open" : ""}`}>
+                <div className={`hamburger-icon ${menuOpen ? "open" : ""}`}>
                         <div className="w-7 h-0.5 bg-black mb-2 transition-all duration-300 ease-in-out"></div>
                         <div className="w-7 h-0.5 bg-black mb-2 transition-all duration-300 ease-in-out"></div>
                         <div className="w-7 h-0.5 bg-black transition-all duration-300 ease-in-out"></div>
@@ -70,24 +74,30 @@ function Navbar() {
 
 
             {menuOpen && (
-                <div className="bg-white bg-opacity-90 backdrop-blur-md shadow-md p-6 space-y-6 md:hidden rounded-lg">
+                <div
+                    className="bg-white bg-opacity-90 backdrop-blur-md shadow-md p-6 space-y-6 md:hidden rounded-lg flex flex-col items-center">
                     <a href="#about"
-                       className="block text-2xl font-semibold border-black bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 hover:text-blue-500 border-2 border-transparent hover:border-cyan-500 rounded-full px-4 py-2 transition-all duration-300 ease-in-out">
+                       className="block text-2xl font-semibold bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 hover:text-blue-500 border-2 border-transparent rounded-full px-4 py-2 transition-all duration-300 ease-in-out focus:outline-none">
                         About
                     </a>
                     <a href="#experience"
-                       className="block text-2xl font-semibold border-black bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 hover:text-blue-500 border-2 border-transparent hover:border-cyan-500 rounded-full px-4 py-2 transition-all duration-300 ease-in-out">
+                       className="block text-2xl font-semibold bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 hover:text-blue-500 border-2 border-transparent rounded-full px-4 py-2 transition-all duration-300 ease-in-out focus:outline-none">
                         Experience
                     </a>
                     <a href="#projects"
-                       className="block text-2xl font-semibold border-black bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 hover:text-blue-500 border-2 border-transparent hover:border-cyan-500 rounded-full px-4 py-2 transition-all duration-300 ease-in-out">
+                       className="block text-2xl font-semibold bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 hover:text-blue-500 border-2 border-transparent rounded-full px-4 py-2 transition-all duration-300 ease-in-out focus:outline-none">
                         Projects
                     </a>
+                    <a href="#blogs"
+                       className="block text-2xl font-semibold bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 hover:text-blue-500 border-2 border-transparent rounded-full px-4 py-2 transition-all duration-300 ease-in-out focus:outline-none">
+                        Blogs
+                    </a>
                     <a href="#contact"
-                       className="block text-2xl font-semibold border-black bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 hover:text-blue-500 border-2 border-transparent hover:border-cyan-500 rounded-full px-4 py-2 transition-all duration-300 ease-in-out">
+                       className="block text-2xl font-semibold bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 hover:text-blue-500 border-2 border-transparent rounded-full px-4 py-2 transition-all duration-300 ease-in-out focus:outline-none">
                         Contact
                     </a>
                 </div>
+
             )}
         </nav>
     );

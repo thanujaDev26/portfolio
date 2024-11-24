@@ -8,6 +8,12 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import None from "./components/Projects/None";
 import AddSectionOne from "./components/Addvertisements/AddSectionOne";
+import Blogs from "./components/Blogs/Blogs";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import BlogDetails from "./components/Blogs/BlogDetails";
+import BlogSection from "./components/Blogs/BlogModal";
+import Testimonial from "./components/Reviews/Testimonial";
+import BackendBlogs from "./components/Blogs/BackendBlogs";
 
 function App() {
     return (
@@ -18,7 +24,11 @@ function App() {
             <Experience />
             {/*<Projects />*/}
             <None/>
-            <AddSectionOne/>
+            {/*<Testimonial/>*/}
+            {/*<BlogSection/>*/}
+            <BackendBlogs/>
+            {/*<Blogs/>*/}
+            {/*<AddSectionOne/>*/}
             <Contact />
             <Footer />
         </div>

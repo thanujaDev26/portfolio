@@ -1,12 +1,19 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import axios from "axios";
+import PopupModal from "./PopupModal";
 
 
 export default function ContactForm(props) {
 
     let[userInput, setUserInput] = useState({
         name : '', email : '', message : ''
+    });
+
+    const [modalOpen, setModalOpen] = useState(false);
+    const [modalContent, setModalContent] = useState({
+        title: '',
+        message: '',
     });
 
     let onChangeName = (event) =>{
@@ -39,32 +46,45 @@ export default function ContactForm(props) {
     let onSubmitHandler = async (e) => {
         e.preventDefault();
         let { name,email,message } = userInput
-        let user = {
-            name: name, email: email, message: message
-        }
-        const templateParams = {
-            from_name : name,
-            from_email : email,
-            message : message
-        }
         try {
             let user = {
                 name : name, email : email,message : message,
             }
-            // const response = await axios.post('http://localhost:3001/email-send-message',user)
-            await emailjs.send(
-                'service_1wwsie6',
-                'template_ffplxha',
-                templateParams,
-                'ntfsFA_vEwleik9wC'
-            )
+            await axios.post('https://api.imthanuja.com/send-email',user)
+            setModalContent({
+                title: 'Success',
+                message: 'Email sent successfully!',
+            });
+            setModalOpen(true);
+
             setUserInput({
                 name : '', email : '', message : ''
             })
-
         }
         catch (error){
-            alert("Failed to send your message. Please try again");
+            if (error.response) {
+                const { status, data } = error.response;
+                if (status === 429) {
+                    setModalContent({
+                        title: 'Too Many Requests',
+                        message: data.message,
+                    });
+                } else {
+                    setModalContent({
+                        title: 'Error',
+                        message: data.message || 'Something went wrong!',
+                    });
+                }
+            } else {
+                setModalContent({
+                    title: 'Error',
+                    message: 'Failed to send email. Please try again later.',
+                });
+            }
+            setModalOpen(true);
+            setUserInput({
+                name : '', email : '', message : ''
+            })
         }
 
     }
@@ -123,7 +143,6 @@ export default function ContactForm(props) {
                         />
                     </div>
 
-
                     <div className="flex justify-center">
                         <button
                             type="submit"
@@ -135,6 +154,12 @@ export default function ContactForm(props) {
                     </div>
                 </div>
             </form>
+            <PopupModal
+                isOpen={modalOpen}
+                onClose={() => setModalOpen(false)}
+                title={modalContent.title}
+                message={modalContent.message}
+            />
         </div>
     )
 }

@@ -147,7 +147,8 @@ function BlogSection() {
                                         )}
                                     </div>
                                 ))}
-                                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 mt-8 items-center justify-center">
+                                <div
+                                    className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 mt-8 items-center justify-center">
                                     <button
                                         className="text-xl border-2 border-black text-black rounded-full px-6 py-3 hover:bg-black hover:text-white transition-all duration-300 ease-in-out"
                                         onClick={() => {
@@ -159,8 +160,9 @@ function BlogSection() {
 
                                     <a
                                         id="pdfDownloadLink"
+                                        target="_blank"
                                         href={selectedBlog.pdf}
-                                        download
+                                        download={`${selectedBlog.title}.pdf`}
                                         style={{display: "none"}}
                                     >
                                         Download

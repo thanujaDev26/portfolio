@@ -7,7 +7,6 @@ function About() {
       {/* ABOUT ME HEADER */}
       <div className="text-center mb-10">
         <p className="text-green-400 font-medium mb-2 tracking-wider text-2xl">ABOUT ME</p>
-        
       </div>
 
       {/* ABOUT CONTENT */}

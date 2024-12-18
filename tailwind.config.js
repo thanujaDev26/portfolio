@@ -8,6 +8,9 @@ module.exports = {
       screens: {
         'smaller': {'max': '870px'},
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
       // fontFamily: {
       //   sans: ["Plus Jakarta Sans", "sans-serif"],
       // },

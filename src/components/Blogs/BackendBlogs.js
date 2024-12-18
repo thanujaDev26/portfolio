@@ -46,12 +46,12 @@ function BlogSection() {
     };
 
     return (
-        <section id="blogs" className="py-8 px-6 bg-gradient-to-b from-gray-50 to-gray-100 flex flex-col items-center">
+        <section id="blogs" className="py-8 px-6 bg-black flex flex-col items-center">
             {/* Section Title */}
             <div className="text-center mb-12">
-                <p className="text-lg md:text-xl text-gray-500">Discover My</p>
-                <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 tracking-tight">
-                    Blog Insights
+                <p className="text-lg md:text-xl text-white">Discover My</p>
+                <h1 className="text-green-400 font-medium mb-2 tracking-wider text-3xl">
+                    BLOG INSIGHTS
                 </h1>
             </div>
 
@@ -60,7 +60,7 @@ function BlogSection() {
                 {blogs.map((blog) => (
                     <div
                         key={blog.id}
-                        className="flex-none w-80 bg-white rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-500 hover:scale-105 flex flex-col"
+                        className="flex-none w-80 bg-black border-2 border-white rounded-xl shadow-lg hover:shadow-2xl transform transition-transform duration-500 hover:scale-105 flex flex-col"
                     >
                         {/* Thumbnail Image */}
                         <img
@@ -72,17 +72,17 @@ function BlogSection() {
 
                         {/* Blog Details */}
                         <div className="flex flex-col justify-between p-6 h-full">
-                            <h2 className="text-xl font-bold text-gray-800 mb-3">{blog.title}</h2>
-                            <p className="text-lg text-gray-600 mb-4 flex-grow">{blog.description}</p>
+                            <h2 className="text-xl font-bold text-white mb-3">{blog.title}</h2>
+                            <p className="text-lg text-white mb-4 flex-grow">{blog.description}</p>
 
-                            <div className="flex justify-between items-center text-sm text-gray-500 mb-4">
+                            <div className="flex justify-between items-center text-sm text-white mb-4">
                                 <p>{blog.date}</p>
                                 <p>{blog.readTime}</p>
                             </div>
 
                             {/* Read More Button */}
                             <button
-                                className="neon-hover text-lg border-2 border-black hover:border-cyan-500 rounded-full px-2 py-1 hover:text-cyan-500 transition-all duration-300 ease-in-out animate-pulse"
+                                className="text-lg border-2 border-white text-white rounded-full px-2 py-1 transition-all duration-300"
                                 onClick={() => openModal(blog.id)}
                             >
                                 Read More →

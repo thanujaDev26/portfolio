@@ -35,7 +35,7 @@ function About() {
 
        
         <div className="flex flex-col items-center">
-          <div className="w-48 h-48 rounded-lg overflow-hidden mb-6 shadow-md">
+          <div className="w-48 h-48 rounded-full overflow-hidden mb-6 shadow-md">
             <img
               src={require('../../asserts/images/avatar.png')} 
               alt="Profile"

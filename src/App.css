@@ -4,3 +4,7 @@ html {
 }
 
 
+body {
+    background-color: black;
+    max-width: 100%;
+}

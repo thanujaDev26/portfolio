@@ -1,17 +1,16 @@
 import React from "react";
 
-
 function Footer() {
-
-    return (
-        <>
-            <footer className="py-8 text-xl text-center relative">
-                <div
-                    className="absolute inset-0 rounded-3xl blur-md opacity-10 bg-gradient-to-r from-blue-400 to-purple-500"></div>
-                <p className="z-10 relative">&copy; 2024 Thanuja Priyadarshane. All Rights Reserved.</p>
-            </footer>
-        </>
-    );
+  return (
+    <>
+      <footer className="py-8 text-center relative text-white">
+        <div className="absolute inset-0 rounded-3xl text-white"></div>
+        <p className="relative text-white text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl">
+          &copy; 2024 Thanuja Priyadarshane. All Rights Reserved.
+        </p>
+      </footer>
+    </>
+  );
 }
 
 export default Footer;

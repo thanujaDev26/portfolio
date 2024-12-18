@@ -1,77 +1,42 @@
-import React from "react";
-import './Profile.css';
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import {useNavigate} from "react-router-dom";
+import React, { useEffect } from "react";
 
-function Profile() {
-    let navigate = useNavigate();
-    return (
-        <section id="profile"
-                 className="flex flex-col items-center py-20 px-4 bg-gradient-to-b from-gray-50 to-gray-100">
+const Profile = () => {
 
-            <div className="neon-border mb-6" style={{marginTop: '2vh'}}>
-                <img
-                    src={require("../../asserts/images/mine.jpg")}
-                    alt="Thanuja Priyadarshane"
-                    className="w-32 h-32 md:w-48 md:h-48 rounded-full border-4 border-gradient-to-r from-yellow-400 to-orange-500 shadow-xl object-cover transform transition-all duration-500 hover:scale-110 hover:shadow-2xl"
-                />
-            </div>
+  return (
+    <section id="profile" className="bg-black text-white">
+      <div className="min-h-screen flex flex-col items-center justify-center text-center p-4">
+        
+        <div className="space-y-4 animate-fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-wide relative">
+            Full Stack Developer & <br />
+            <span className="text-green-400 inline-flex items-center">
+              DevOps Engineer
+              <img
+                src={require("../../asserts/images/d1ac8c80d4c0165c4863973ac24f6dbf.png")}
+                alt="DevOps Icon"
+                className="inline-block w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-64 lg:h-64 -mt-8 -ml-3 z-0" 
+              />
+            </span>
+          </h1>
+          <p className="text-gray-400 text-base md:text-lg lg:text-xl leading-relaxed max-w-xl mx-auto">
+            Crafting seamless solutions while driving innovation in DevOps and modern web technologies.
+          </p>
+        </div>
+        
+        <div className="mt-8">
+          <a
+            href="#about"
+            className="relative inline-block px-8 py-4 text-lg font-semibold text-white bg-green-500 rounded-full shadow-lg transition-transform duration-2000 hover:bg-green-400 hover:scale-105"
+          >
+            Get Started
+          </a>
+        </div>
 
-
-            <h1 className="text-3xl md:text-5xl font-extrabold mt-4 text-black text-center transition-all duration-300 transform hover:scale-105">
-                Thanuja Priyadarshane
-            </h1>
-            <p className="sm:text-xl md:text-xl lg:text-3xl text-center font-semibold mt-4 tracking-wide
-            bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent typewriter">
-                Full Stack Developer | DevOps Explorer
-            </p>
-
-
-            <div className="relative z-0 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 mt-8">
-                <button
-                    className="neon-hover text-xl border-2 border-black hover:border-cyan-500 rounded-full
-    px-4 py-2 hover:text-cyan-500 transition-all duration-300 ease-in-out animate-pulse"
-                    onClick={() => {
-                        document.getElementById("cvDownloadLink").click();
-                    }}
-                >
-                    Download CV
-                </button>
-
-
-                <a
-                    id="cvDownloadLink"
-                    href={require("../../asserts/pdf/Thanuja.pdf")}
-                    download="thanujaDev.pdf"
-                    style={{display: "none"}}
-                >
-                </a>
-
-                <a href="#contact"
-                   className="neon-hover text-xl border-2 border-black hover:border-cyan-500 rounded-full
-        px-4 py-2 hover:text-cyan-500 transition-all duration-300 ease-in-out animate-pulse">
-                    Contact Info
-                </a>
-            </div>
-
-            <div
-                className="absolute inset-0 rounded-3xl blur-md opacity-10 bg-gradient-to-r from-blue-400 to-purple-500"></div>
-
-
-            <div className="flex space-x-6 mt-8">
-
-                <FaLinkedin
-                    className="w-8 h-8 cursor-pointer neon-icon transition-all duration-300 transform hover:scale-125 hover:text-blue-600"
-                    onClick={() => window.open("https://www.linkedin.com/in/thanuja-priyadarshane/", "_blank")}
-                />
-
-                <FaGithub
-                    className="w-8 h-8 cursor-pointer neon-icon transition-all duration-300 transform hover:scale-125 hover:text-blue-600"
-                    onClick={() => window.open("https://github.com/thanujaDev26", "_blank")}
-                />
-            </div>
-        </section>
-    );
-}
+        <div className="absolute top-10 left-10 w-20 h-20 bg-green-500 rounded-full blur-3xl opacity-30"></div>
+        <div className="absolute bottom-10 right-10 w-24 h-24 bg-gray-500 rounded-full blur-2xl opacity-20"></div>
+      </div>
+    </section>
+  );
+};
 
 export default Profile;

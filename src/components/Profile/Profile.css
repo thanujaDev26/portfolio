@@ -1,84 +1,15 @@
-/* Neon Hover Effect for Buttons */
-.neon-btn {
-    color: black;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7), 0 0 15px rgba(0, 255, 255, 0.7), 0 0 25px rgba(0, 255, 255, 0.7);
-    transition: text-shadow 0.3s ease;
-}
-
-.neon-btn:hover {
-    text-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1);
-}
-
-/* Neon Glow for Social Icons */
-.neon-icon {
-    /*filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.7)) drop-shadow(0 0 10px rgba(0, 255, 255, 0.7));*/
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.neon-icon:hover {
-    /*filter: drop-shadow(0 0 15px rgba(0, 255, 255, 1)) drop-shadow(0 0 20px rgba(0, 255, 255, 1));*/
-    transform: scale(1.25);
-}
-
-/*.neon-icon {*/
-/*    position: relative;*/
-/*    color: #fff; !* Icon color *!*/
-/*    transition: all 0.3s ease-in-out;*/
-/*}*/
-
-/*.neon-icon:hover {*/
-/*    color: #fff; !* Keep icon color white *!*/
-/*    transform: scale(1.2); !* Slight scaling for hover effect *!*/
-/*}*/
-
-/* Neon background with glowing effect */
-.neon-icon:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 255, 255, 0.2); /* Neon color */
-    border-radius: 50%;
-    z-index: -1;
-    /*box-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.7);*/
-    opacity: 0; /* Start with no glow */
-    transition: opacity 0.3s ease-in-out;
-}
-
-.neon-icon:hover:before {
-    opacity: 1; /* Make glow visible on hover */
-    box-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1);
-}
-
-
-.typewriter {
-    /*display: inline-block;*/
-    /*font-size: 1.25rem;*/
-    /*white-space: nowrap;*/
-    /*overflow: hidden;*/
-    /*!*border-right: 4px solid #000; *!*/
-    /*animation: typing 50s steps(60) 1s forwards;*/
-    display: inline-block;
-    font-size: 1.25rem;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    animation: typing 20s steps(50) 1s forwards, blink 1s step-end infinite;
-}
-
-/* Typing Effect */
-@keyframes typing {
-    0% {
-        width: 0;
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
     }
-    100% {
-        width: 100%;
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-}
-
-.absolute.inset-0.rounded-3xl.blur-md {
-    z-index: -1; /* Sends the background overlay behind the content */
-}
-
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-in-out;
+  }
+  

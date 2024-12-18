@@ -8,6 +8,9 @@ module.exports = {
       screens: {
         'smaller': {'max': '870px'},
       },
+      // fontFamily: {
+      //   sans: ["Plus Jakarta Sans", "sans-serif"],
+      // },
     },
   },
   plugins: [],

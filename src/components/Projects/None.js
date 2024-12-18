@@ -2,18 +2,19 @@ import React from "react";
 
 function None() {
     return (
-        <section className="py-20 px-6 bg-gradient-to-b from-gray-50 to-gray-100" id="projects">
+        <section className="py-20 px-6 bg-black text-white" id="projects">
             <div className="text-center mb-12">
-                <p className="text-lg md:text-xl text-gray-500">All of my projects are currently ongoing.</p>
-                <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 tracking-tight mb-4">
+                <p className="text-lg md:text-xl">All of my projects are currently ongoing.</p>
+                <h1 className="text-4xl md:text-6xl font-extrabold  tracking-tight mb-4">
                     Projects Coming Soon
                 </h1>
-                <p className="text-lg text-gray-600">
+                <p className="text-lg">
                     In the meantime, you can explore my ongoing projects on my GitHub.
                 </p>
                 <a
                     href="https://github.com/thanujaDev26"
-                    className="mt-8 inline-block text-xl font-semibold text-cyan-500 hover:text-cyan-700 border-b-2 border-transparent transition-all duration-300"
+                    className="mt-8 inline-block text-xl font-semibold border-b-2 border-transparent"
+                    
                 >
                     &lt;Visit My GitHub/&gt;
                 </a>

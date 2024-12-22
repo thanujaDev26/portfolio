@@ -15,7 +15,18 @@ function BlogSection() {
             link: "microservices-architecture",
             readTime: "10 min read",
         },
+        {
+            id: 2,
+            title: "Build a CI/CD Pipeline using GitHub Actions",
+            description: "Let's build a CI/CD Pipeline using GitHub Actions.",
+            date: "December 22, 2024",
+            image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+            link: "ci-cd-github-actions",
+            readTime: "30 min read",
+        },
+        
     ]);
+
 
     const [selectedBlog, setSelectedBlog] = useState(null); // To hold blog details
     const [isModalOpen, setIsModalOpen] = useState(false); // Modal visibility

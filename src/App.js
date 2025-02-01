@@ -37,5 +37,5 @@ function App() {
 
 export default App;
 
-
+//export PATH=$PATH:/Users/thanujadev26/.npm-global/bin
 //npm run build, firebase login(if not logged in), then firebase deploy

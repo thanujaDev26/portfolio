@@ -4,22 +4,22 @@ import { FaLinkedin, FaGithub,FaInstagram,FaFacebook } from "react-icons/fa";
 function About() {
   return (
     <section id="about" className="bg-black text-white py-10 px-6">
-      {/* ABOUT ME HEADER */}
+
       <div className="text-center mb-10">
         <p className="text-green-400 font-medium mb-2 tracking-wider text-2xl">ABOUT ME</p>
       </div>
 
-      {/* ABOUT CONTENT */}
+
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
-        {/* TEXT SECTION */}
+
         <div className="bg-black p-6 md:p-10 shadow-lg space-y-4 text-gray-300 leading-relaxed" style={{border:'1px solid gray', borderRadius : '2vh'}}>
         <h1 className="text-2xl md:text-3xl tracking-tight">
           HELLO! 👋 I AM THANUJA.
         </h1>
           <p>
               I'm a passionate software developer pursuing a Bachelor's in Computer Science at the University of Ruhuna, Sri Lanka. 
-              With over two years of full-stack development experience, I specialize in backend technologies like Express.js, FastAPI 
+              With over 3 years of full-stack development experience, I specialize in backend technologies like Express.js, FastAPI
               and Fiber, as well as frontend frameworks like React. Additionally, I have experience in mobile application development using Flutter.
           </p>
           <p>
@@ -43,7 +43,7 @@ function About() {
             />
           </div>
 
-          {/* BUTTONS */}
+
           <div className="relative z-0 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 mt-8">
                 <button
                     className="text-lg border-2 border-white rounded-full px-3 py-2 transition-all duration-300 ease-in-out"
@@ -69,7 +69,7 @@ function About() {
                 </a>
             </div>
 
-          {/* SOCIAL ICONS */}
+
             <div className="flex space-x-6 mt-8">
                 <FaLinkedin
                     className="w-8 h-8 cursor-pointer neon-icon transition-all duration-300 transform hover:scale-125 hover:text-[#0077B5]"

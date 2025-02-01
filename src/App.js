@@ -36,3 +36,6 @@ function App() {
 }
 
 export default App;
+
+
+//npm run build, firebase login(if not logged in), then firebase deploy

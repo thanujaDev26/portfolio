@@ -17,11 +17,6 @@ function Navbar() {
         <nav className="bg-black text-white backdrop-blur-md shadow-md fixed w-full z-20 navbar">
             <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
                 <div className="flex items-center">
-                <img 
-                        src={require("../../asserts/images/logo.png")} 
-                        alt="Logo" 
-                        className="h-36 w-36 object-contain" 
-                    />
                 </div>
                 <div className="hidden md:flex flex-grow justify-center items-center space-x-6">
                     <div className="flex space-x-6 md:space-x-10 border-2 border-white rounded-full p-2">

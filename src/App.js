@@ -24,7 +24,7 @@ function App() {
             <Experience />
             {/* <Projects /> */}
             <None/>
-            {/*<Testimonial/>*/}
+            {/* <Testimonial/> */}
             {/*<BlogSection/>*/}
             <BackendBlogs/>
             {/*<Blogs/>*/}

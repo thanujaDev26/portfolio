@@ -1,18 +1,19 @@
 import React from "react";
+import { Quote } from "lucide-react";
 
 const testimonials = [
     {
         id: 1,
-        name: "John Doe",
-        position: "CEO at TechCorp",
-        image: "https://randomuser.me/api/portraits/men/1.jpg",
+        name: "Amila Abeysinghe",
+        position: "Tutor - Combined Mathematics (A/L)",
+        image: "https://yt3.googleusercontent.com/tq5CKUpOZ0jJ4cl9OvtZ8qlM0E-X9KNlBR0aQdGolqoGiC_p4_F_gD8nzfZ7GlJ_0CHyTy5jbA=s900-c-k-c0x00ffffff-no-rj",
         quote:
             "This service has exceeded all my expectations. The team is professional, dedicated, and extremely reliable.",
     },
     {
         id: 2,
-        name: "Jane Smith",
-        position: "CTO at Innovate Ltd",
+        name: "Yeshani Tharushika",
+        position: "Executive Sales and Marketing (IIHE)",
         image: "https://randomuser.me/api/portraits/women/2.jpg",
         quote:
             "Highly recommended! Their attention to detail and commitment to quality are truly outstanding.",
@@ -29,39 +30,49 @@ const testimonials = [
 
 function TestimonialSection() {
     return (
-        <section className="bg-gray-50 py-16 px-6">
-            <div className="max-w-7xl mx-auto text-center">
-                <h2 className="text-4xl font-extrabold text-gray-800 mb-6">
-                    What Our Clients Say
-                </h2>
-                <p className="text-gray-600 text-lg mb-12">
-                    Discover why our clients love working with us.
-                </p>
+        <section className="bg-black text-white py-24 px-6 relative overflow-hidden">
+            <div className="max-w-7xl mx-auto">
+                <div className="text-center mb-16">
+                    <h2 className="text-5xl font-extrabold text-white mb-6 relative inline-block">
+                        What My Clients Say
+                        <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white to-transparent"></div>
+                    </h2>
+                    <p className="text-white text-xl opacity-80">
+                        Discover why clients love working with me.
+                    </p>
+                </div>
 
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
                     {testimonials.map((testimonial) => (
                         <div
                             key={testimonial.id}
-                            className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                            className="relative group"
                         >
-                            <div className="flex items-center mb-4">
-                                <img
-                                    src={testimonial.image}
-                                    alt={testimonial.name}
-                                    className="w-16 h-16 rounded-full object-cover border-2 border-gray-300"
-                                />
-                                <div className="ml-4">
-                                    <h3 className="text-lg font-semibold text-gray-800">
-                                        {testimonial.name}
-                                    </h3>
-                                    <p className="text-sm text-gray-500">
-                                        {testimonial.position}
-                                    </p>
+                            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 hover:bg-white/15 transition-all duration-300 border border-white/10">
+                                <Quote className="text-white/20 w-12 h-12 absolute -top-6 -left-6" />
+                                <div className="flex flex-col items-center text-center mb-6">
+                                    <div className="relative mb-4">
+                                        <div className="w-24 h-24 rounded-full overflow-hidden ring-4 ring-white/20 transform transition-transform duration-300 group-hover:scale-110">
+                                            <img
+                                                src={testimonial.image}
+                                                alt={testimonial.name}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white mb-1">
+                                            {testimonial.name}
+                                        </h3>
+                                        <p className="text-sm text-white/60">
+                                            {testimonial.position}
+                                        </p>
+                                    </div>
                                 </div>
+                                <p className="text-white/80 text-lg leading-relaxed">
+                                    "{testimonial.quote}"
+                                </p>
                             </div>
-                            <p className="text-gray-700 italic">
-                                "{testimonial.quote}"
-                            </p>
                         </div>
                     ))}
                 </div>

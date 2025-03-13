@@ -58,7 +58,7 @@ function About() {
                 <a
                     id="cvDownloadLink"
                     href={require("../../asserts/pdf/Thanuja.pdf")}
-                    download="thanujaDev.pdf"
+                    download="Thanuja_Priyadatshane_CV.pdf"
                     style={{display: "none"}}
                 >
                 </a>

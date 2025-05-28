@@ -2,33 +2,68 @@ import React from "react";
 
 function Experience() {
   const skills = [
-    { title: "JavaScript", level: "Advanced", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-    { title: "Python", level: "Advanced", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-    { title: "Golang", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" },
-    { title: "React.js", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-    {
-      title: "Flutter",
-      level: "Intermediate",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg",
-    },
-    { title: "Node.js", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-    { title: "AWS Cloud", level: "Intermediate", icon: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" },
-    {
-      title: "Firebase",
-      level: "Intermediate",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-    },
-    { title: "GitHub Actions", level: "Intermediate", icon: "https://www.vectorlogo.zone/logos/github/github-icon.svg" },
-    { 
-      title: "Jenkins", 
-      level: "Intermediate", 
-      icon: "https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" 
-    },
-    { title: "Docker & K8S", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { 
+    title: "Docker & Kubernetes", 
+    level: "Intermediate", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" 
+  },
+  { 
+    title: "Kubernetes", 
+    level: "Intermediate", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" 
+  },
+  { 
+    title: "Terraform", 
+    level: "Basic", 
+    icon: "https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" 
+  },
+  { 
+    title: "GitHub Actions", 
+    level: "Intermediate", 
+    icon: "https://www.vectorlogo.zone/logos/github/github-icon.svg" 
+  },
+  { 
+    title: "Jenkins", 
+    level: "Intermediate", 
+    icon: "https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" 
+  },
+  { 
+    title: "AWS", 
+    level: "Intermediate", 
+    icon: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" 
+  },
+   { 
+    title: "C#", 
+    level: "Intermediate", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" 
+  },
+  { 
+    title: "Golang", 
+    level: "Intermediate", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" 
+  },
+  { 
+    title: "JavaScript", 
+    level: "Advanced", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
+  },
+  { 
+    title: "Python", 
+    level: "Advanced", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" 
+  },
+  { 
+    title: "React.js", 
+    level: "Intermediate", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
+  },
+  { 
+    title: "Flutter", 
+    level: "Intermediate", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg" 
+  },
+];
 
-    { title: "Terraform", level: "Basic", icon: "https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" },
-    
-  ];
 
   return (
     <section className="bg-black py-12">

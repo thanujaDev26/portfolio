@@ -7,21 +7,15 @@ const Profile = () => {
       <div className="min-h-screen flex flex-col items-center justify-center text-center p-4">
         
         <div className="space-y-4 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-wide relative">
-            Full Stack Developer & <br />
-            <span className="text-green-400 inline-flex items-center">
-              DevOps Engineer
-              <img
-                src={require("../../asserts/images/d1ac8c80d4c0165c4863973ac24f6dbf.png")}
-                alt="DevOps Icon"
-                className="inline-block w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-64 lg:h-64 -mt-8 -ml-3 z-0" 
-              />
-            </span>
-          </h1>
-          <p className="text-gray-400 text-base md:text-lg lg:text-xl leading-relaxed max-w-xl mx-auto">
-            Crafting seamless solutions while driving innovation in DevOps and modern web technologies.
-          </p>
-        </div>
+          <h1 className="text-4xl sm:text-xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-wide relative">
+            <span className="text-white">DevOps Engineer</span><br /> 
+            <span className="bg-gradient-to-r from-white to-green-700 text-transparent bg-clip-text">&</span><br /> 
+            <span className="text-green-400">Full Stack Developer</span>
+        </h1>
+        <p className="text-gray-400 text-base md:text-lg lg:text-xl leading-relaxed max-w-5xl mx-auto">
+          Crafting seamless solutions while driving innovation in DevOps and modern web technologies.
+        </p>
+      </div>
         
         <div className="mt-8">
           <a

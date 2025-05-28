@@ -13,26 +13,28 @@ function About() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
 
-        <div className="bg-black p-6 md:p-10 shadow-lg space-y-4 text-gray-300 leading-relaxed" style={{border:'1px solid gray', borderRadius : '2vh'}}>
-        <h1 className="text-2xl md:text-3xl tracking-tight">
-          HELLO! 👋 I AM THANUJA.
-        </h1>
-          <p>
-              I'm a passionate software developer pursuing a Bachelor's in Computer Science at the University of Ruhuna, Sri Lanka. 
-              With over 3 years of full-stack development experience, I specialize in backend technologies like Express.js, FastAPI
-              and Fiber, as well as frontend frameworks like React. Additionally, I have experience in mobile application development using Flutter.
-          </p>
-          <p>
-              I deploy projects using <strong>AWS</strong> with CI/CD pipelines via GitHub Actions. My cloud-based development 
-              experience includes using Golang for scalable solutions and tools like Docker, Kubernetes, Apache Kafka, Kong API Gateway, 
-              and Terraform for infrastructure automation.
-          </p>
-          <p>
-              I'm exploring microservices architecture, DevOps, and Machine Learning while continuously learning, contributing to 
-              open-source projects, and supporting others in the tech community.
-          </p>
-        </div>
-
+          <div className="bg-black p-6 md:p-10 shadow-lg space-y-4 text-gray-300 leading-relaxed" style={{ border: '1px solid gray', borderRadius: '2vh' }}>
+            <h1 className="text-2xl md:text-3xl tracking-tight">
+              Hello! 👋 I’m Thanuja
+            </h1>
+            <p>
+              I’m a software developer studying Computer Science at the University of Ruhuna, Sri Lanka. 
+              With over three years of experience, I work mainly with backend technologies like 
+              ASP.NET Core, Express.js, and Fiber, alongside frontend development with React. 
+              I also build cross-platform mobile applications using Flutter.
+            </p>
+            <p>
+              Currently, I’m an intern DevSecOps Engineer at 
+              <a href="https://n-vision.com/" target="_blank" rel="noopener noreferrer" className="none"> Nvision</a>, 
+              where I help integrate security into DevOps workflows. I deploy projects on AWS using 
+              CI/CD pipelines built with GitHub Actions and Jenkins. 
+              My toolkit includes Docker, Kubernetes, Ansible, and Terraform to build scalable, automated infrastructure.
+            </p>
+            <p>
+              I’m passionate about microservices, DevOps, and machine learning. 
+              Outside work, I contribute to open source projects and love sharing knowledge within the tech community.
+            </p>
+          </div>
        
         <div className="flex flex-col items-center">
           <div className="w-48 h-48 rounded-full overflow-hidden mb-6 shadow-md">

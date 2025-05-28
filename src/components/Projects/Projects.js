@@ -24,9 +24,10 @@ export default function Example() {
               <div className="relative min-h-[30rem] w-full grow">
                 <div className="absolute overflow-hidden bottom-0 rounded-md">
                   <img
-                    className="w-full h-full object-cover object-bottom rounded-md"
+                    className="w-full h-full object-cover object-bottom rounded-md user-select-none select-none pointer-events-none"
                     src={require('../../asserts/images/mobile_1.jpg')}
                     alt="Mobile friendly UI"
+                    draggable={false}
                   />
                 </div>
               </div>
@@ -83,7 +84,8 @@ export default function Example() {
                   <img
                     src={require('../../asserts/images/python_ss.png')}
                     alt="Code snippet"
-                    className="w-full h-full object-cover rounded-md"
+                    className="w-full h-full object-cover rounded-md user-select-none select-none pointer-events-none"
+                    draggable={false}
                   />
                 </div>
               </div>

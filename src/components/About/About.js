@@ -41,7 +41,8 @@ function About() {
             <img
               src={require('../../asserts/images/avatar.png')} 
               alt="Profile"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover user-select-none select-none pointer-events-none"
+              draggable={false}
             />
           </div>
 

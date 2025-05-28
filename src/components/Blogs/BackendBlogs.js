@@ -77,8 +77,9 @@ function BlogSection() {
                         <img
                             src={blog.image}
                             alt={blog.title}
-                            className="rounded-t-lg w-full object-cover"
+                            className="rounded-t-lg w-full object-cover user-select-none select-none pointer-events-none"
                             style={{ height: "12rem", padding: "1rem" }}
+                            draggable = {false}
                         />
 
                         {/* Blog Details */}

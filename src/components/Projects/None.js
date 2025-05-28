@@ -2,7 +2,7 @@ import React from "react";
 
 function None() {
     return (
-        <section className="py-20 px-6 bg-black text-white" id="projects">
+        <section className="py-20 px-6 bg-black text-white" >
             <div className="text-center mb-12">
                 <p className="text-lg md:text-xl">All of my projects are currently ongoing.</p>
                 <h1 className="text-4xl md:text-6xl font-extrabold  tracking-tight mb-4">

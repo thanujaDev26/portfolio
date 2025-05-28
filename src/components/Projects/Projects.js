@@ -1,6 +1,6 @@
 export default function Example() {
   return (
-    <div className="bg-black py-24 sm:py-32 text-white">
+    <section className="bg-black py-24 sm:py-32 text-white" id="projects">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="text-center text-green-400 font-bold tracking-wider mb-10 text-2xl">
           PROJECTS
@@ -92,6 +92,6 @@ export default function Example() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

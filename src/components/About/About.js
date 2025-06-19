@@ -20,12 +20,12 @@ function About() {
             <p>
               I’m a software developer studying Computer Science at the University of Ruhuna, Sri Lanka. 
               With over three years of experience, I work mainly with backend technologies like 
-              ASP.NET Core, Express.js, and Fiber, alongside frontend development with React. 
+              Golang, Java, Python and JavaScript alongside frontend development with React. 
               I also build cross-platform mobile applications using Flutter.
             </p>
             <p>
               Currently, I’m an intern DevSecOps Engineer at 
-              <a href="https://n-vision.com/" target="_blank" rel="noopener noreferrer" className="none"> Nvision</a>, 
+              <a href="https://n-vision.com/" target="_blank" rel="noopener noreferrer" className="none"> NVISION</a>, 
               where I help integrate security into DevOps workflows. I deploy projects on AWS using 
               CI/CD pipelines built with GitHub Actions and Jenkins. 
               My toolkit includes Docker, Kubernetes, Ansible, and Terraform to build scalable, automated infrastructure.

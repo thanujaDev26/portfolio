@@ -27,15 +27,15 @@ function Experience() {
     level: "Intermediate", 
     icon: "https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" 
   },
-  { 
-    title: "AWS", 
-    level: "Intermediate", 
-    icon: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" 
+  {
+  "title": "AWS",
+  "level": "Intermediate",
+  "icon": "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg"
   },
-   { 
-    title: "C#", 
-    level: "Intermediate", 
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" 
+  {
+  "title": "Java",
+  "level": "Intermediate",
+  "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
   },
   { 
     title: "Golang", 

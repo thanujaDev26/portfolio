@@ -12,6 +12,7 @@ import BlogDetails from "./components/Blogs/BlogDetails";
 import BlogSection from "./components/Blogs/BlogModal";
 import Testimonial from "./components/Reviews/Testimonial";
 import BackendBlogs from "./components/Blogs/BackendBlogs";
+import Spinner from "./components/Blogs/Spinner";
 
 
 function App() {
@@ -23,12 +24,13 @@ function App() {
             <Profile />
             <About />
             <Experience />
-            <Projects />
-            {/* <None/> */}
+            {/* <Projects /> */}
+            <None/>
             {/* <Testimonial/> */}
             {/*<BlogSection/>*/}
             <BackendBlogs/>
-            {/*<Blogs/>*/}
+            {/* <Blogs/> */}
+            {/* <Spinner/> */}
             {/*<AddSectionOne/>*/}
             <Contact />
             <Footer />

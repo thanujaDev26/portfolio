@@ -24,16 +24,25 @@ function BlogSection() {
             link: "ci-cd-github-actions",
             readTime: "30 min read",
         },
+        {
+            id: 3,
+            title: "Service Oriented Architecture",
+            description: "The Forgotten Foundation of Modern Systems",
+            date: "Novembder 07, 2025",
+            image: "https://duws858oznvmq.cloudfront.net/Service_Oriented_Architecture_3bb8013c84.webp",
+            link: "service-oriented-architecture",
+            readTime: "20 min read",
+        },
         
     ]);
 
 
-    const [selectedBlog, setSelectedBlog] = useState(null); // To hold blog details
-    const [isModalOpen, setIsModalOpen] = useState(false); // Modal visibility
-    const [isLoading, setIsLoading] = useState(false); // Loading spinner during fetch
+    const [selectedBlog, setSelectedBlog] = useState(null); 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isLoading, setIsLoading] = useState(false); 
     const navigate = useNavigate();
 
-    // Open modal and fetch blog details from the backend
+    
     const openModal = async (id) => {
         navigate(`blogs/${id}`);
         setIsLoading(true);
@@ -41,7 +50,8 @@ function BlogSection() {
 
         try {
             const response = await axios.get(`https://api.imthanuja.com/blogs/${id}`);
-            const blog = response.data.data.blog; // Adjust structure if needed
+            const blog = response.data.data.blog; 
+            console.log(blog)
             setSelectedBlog(blog);
         } catch (error) {
             console.error("Error fetching blog details:", error);

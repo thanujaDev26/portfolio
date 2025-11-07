@@ -8,9 +8,9 @@ const Profile = () => {
         
         <div className="space-y-4 animate-fade-in">
           <h1 className="text-4xl sm:text-xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-wide relative">
-            <span className="text-white">DevOps Engineer</span><br /> 
-            <span className="bg-gradient-to-r from-white to-green-700 text-transparent bg-clip-text">&</span><br /> 
-            <span className="text-green-400">Full Stack Developer</span>
+            <span className="text-white">Backend Engineer</span><br /> 
+            {/* <span className="bg-gradient-to-r from-white to-green-700 text-transparent bg-clip-text">&</span><br /> 
+            <span className="text-green-400">Full Stack Developer</span> */}
         </h1>
         <p className="text-gray-400 text-base md:text-lg lg:text-xl leading-relaxed max-w-5xl mx-auto">
           Crafting seamless solutions while driving innovation in DevOps and modern web technologies.
